@@ -1,0 +1,15 @@
+{
+  "input_data_audio": {
+    "user_id": "str",
+    "audio_event_id": "str",
+    "conversation_id": "str",
+    "twilio_call_sid": "str",
+    "conversation_creation_date_time": "date_time",
+    "transcription": "str",
+    "language": "str",
+    "other_metadata": {
+      "user_location": "str",
+      "DAT": "str"
+    }
+  }
+}
