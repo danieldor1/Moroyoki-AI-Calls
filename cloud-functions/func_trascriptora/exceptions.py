@@ -21,8 +21,13 @@ class TranscriptionError(Exception):
         self.exception_invoking_the_class = exception
 
     def _call_common_logic(self):
-        if isinstance(self.exception_invoking_the_class, ):
-            return[]
+        if isinstance(self.exception_invoking_the_class, FileNotFoundError):
+            return self.file_not_found_or_empty()
+        
+        if isinstance():
+            return
+
+
         
     def file_not_found_or_empty(self):
         return[]
