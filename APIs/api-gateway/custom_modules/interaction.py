@@ -3,7 +3,7 @@ from typing import Dict, Any, AnyStr, List
 from retry import retry
 from http import HTTPStatus
 
-@retry(retry_num=3, retry_sleep_sec=1)
+@retry(tries=3, delay=0.5)
 def post_method_interaction_wrapper(
     data:List[Dict[AnyStr, Any]], 
     url: AnyStr)->AnyStr:
